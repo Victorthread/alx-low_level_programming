@@ -1,33 +1,36 @@
 #include <stdio.h>
+
 /**
- * main - Entry point
+ * main - Entry point of the program
  *
- * Description: This is the main function that adds one line to the code
- * It initializes variables, performs calculations, and prints results.
+ * Description: This program demonstrates the use of pointers and array
+ * manipulation to indirectly modify the value of an array element.
+ * It initializes an array, a pointer, and uses the pointer to change the
+ * value of an array element. The modified array element is then printed.
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-int n;
-int a[5];
-int *p;
+	int n;
+	int a[5];
+	int *p;
 
-a[2] = 1024;
-p = &n;
+	a[2] = 1024;
+	p = &n;
 
     /*
-     * Write your line of code here...
+     * write your line of code here...
      * Remember:
-     * - You are not allowed to use 'a'
-     * - You are not allowed to modify 'p'
-     * - Only one statement
-     * - You are not allowed to code anything else than this line of code
+     * - you are not allowed to use a
+     * - you are not allowed to modify p
+     * - only one statement
+     * - you are not allowed to code anything else than this line of code
      */
-*(p + 5) = 98;
+	*(p + 5) = 98;  /* Add this line */
 
     /* ...so that this prints 98\n */
-printf("a[2] = %d\n", a[2]);
-return (0);
+	printf("a[2] = %d\n", a[2]);
+	return (0);
 }
 
