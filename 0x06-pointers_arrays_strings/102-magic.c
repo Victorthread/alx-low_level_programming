@@ -1,15 +1,5 @@
 #include <stdio.h>
 
-/**
- * main - Entry point of the program
- *
- * Description: This program demonstrates the use of pointers and array
- * manipulation to indirectly modify the value of an array element.
- * It initializes an array, a pointer, and uses the pointer to change the
- * value of an array element. The modified array element is then printed.
- *
- * Return: Always 0 (Success)
- */
 int main(void)
 {
 	int n;
